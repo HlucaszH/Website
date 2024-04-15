@@ -1,54 +1,70 @@
-body{
-    margin: 0px;
+* {
+    box-sizing: border-box;
 }
-header{
-    color: white;
+body {
+    margin: 0;
+    background: #1b1b1b;
+    color: #ffffff;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: .01071em;
 }
-main{
-    margin-left: 20px;
-    margin-right: 20px;
+body>header>nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 64px;
+    transition: all 250ms;
 }
-footer{
-    background-color: hsl(0, 0%, 25%);
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-}
-.navbar ul{
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
+nav {
     display: block;
+    unicode-bidi: isolate;
+}
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.splash {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
-.navbar a:hover{
-    background-color: hsl(0, 0%, 10%);
+.splash .socials {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-.navbar li{
-    float: right;
+.has-tooltip {
+    position: relative;
 }
-div.mycontainer{
-    overflow: auto;
-    background-color: hsl(0, 0%, 25%);
-    width: 100%;
+.tooltip {
+    margin: 0;
+    border-radius: 5px;
+    background: rgba(97, 97, 97, .9);
+    color: #fff;
+    visibility: hidden;
+    z-index: 1;
 }
-div.logo{
-    display: block;
-    padding: 15px;
-    overflow: auto;
-    float: left;
-}
-div.mycontainer div{
-    width:50%;
-    float: left;
-  }
-.logo a{
-    text-decoration: none;
-    color: white;
+.tooltip:hover{
+    visibility: visible;
 }
