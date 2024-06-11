@@ -34,13 +34,14 @@ nav h1 {
   gap: 20px; /* Space between the links */
 }
 
-nav a {
-  color: #ffffff; /* White text */
-  text-decoration: none;
+a {
+  color: black; /* Normal state */
+  text-decoration: none; /* Remove underline */
 }
 
-nav a:hover {
-  text-decoration: underline;
+a:hover,
+a:visited {
+  color: black; /* Hover and visited states */
 }
 
 main {
