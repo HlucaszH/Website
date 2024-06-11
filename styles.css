@@ -13,6 +13,7 @@ body {
 
 header {
   background-color: #000000; /* Black background for header */
+  color: #ffffff; /* White text */
   padding: 20px 0;
 }
 
@@ -35,13 +36,13 @@ nav h1 {
 }
 
 a {
-  color: black; /* Normal state */
+  color: white; /* Normal state */
   text-decoration: none; /* Remove underline */
 }
 
 a:hover,
 a:visited {
-  color: black; /* Hover and visited states */
+  color: white; /* Hover and visited states */
 }
 
 main {
