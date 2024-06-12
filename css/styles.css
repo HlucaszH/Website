@@ -8,12 +8,13 @@ body {
   background-color: #000000; /* Black background */
   color: #ffffff; /* White text */
   line-height: 1.6;
+  font-size: 2rem; /* Double the base font size */
 }
 
 header {
   background-color: #000000; /* Black background for header */
   color: #ffffff; /* White text */
-  padding: 20px 0;
+  padding: 40px 0; /* Double padding */
 }
 
 nav {
@@ -22,42 +23,18 @@ nav {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav h1 {
-  font-size: 1.5rem;
+  padding: 0 40px; /* Double padding */
 }
 
 .nav-links {
   display: flex;
-  gap: 20px; /* Space between the links */
+  gap: 40px; /* Double the space between the links */
 }
 
 a {
   color: white; /* Normal state */
   text-decoration: none; /* Remove underline */
-}
-
-a:hover,
-a:visited {
-  color: white; /* Hover and visited states */
+  font-size: 2rem; /* Double the font size */
 }
 
 main {
@@ -66,31 +43,121 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 40px; /* Double padding */
 }
 
-.profile,
-.projects,
-.about,
-.contact {
+.profile {
   max-width: 600px;
 }
 
 .profile-picture {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 300px; /* Double the size */
+  height: 300px; /* Double the size */
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Double the margin */
+}
+
+section#about ul {
+  list-style-type: none; /* Remove list item decoration */
+  padding: 0;
+}
+
+section#about li {
+  margin-bottom: 20px; /* Add some spacing between list items */
+}
+
+section#about p {
+  margin-bottom: 20px; /* Add margin-bottom to <p> elements */
+}
+
+section#about img {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
   background-color: #000000; /* Black background for footer */
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0; /* Double padding */
 }
 
 footer p {
   color: #ffffff; /* White text */
-  font-size: 0.875rem;
+  font-size: 1.75rem; /* Double the font size */
+}
+
+button {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333333; /* Slightly darker background on hover */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Reduce font size for better readability on mobile */
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0; /* Remove gap on mobile */
+  }
+
+  a {
+    font-size: 1rem; /* Set font size of all links to 1rem */
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  section#about img {
+    width: 100%; /* Ensure image scales down */
+    height: auto;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  section#about ul {
+    padding: 0;
+  }
+
+  section#about li {
+    font-size: 1rem; /* Set font size to 1rem for mobile */
+  }
+
+  button {
+    font-size: 1rem;
+  }
 }
