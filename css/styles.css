@@ -5,15 +5,15 @@
 
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White text */
+  background-color: beige;
+  color: black;
   line-height: 1.6;
   font-size: 2rem; /* Double the base font size */
 }
 
 header {
-  background-color: #000000; /* Black background for header */
-  color: #ffffff; /* White text */
+  background-color: rgb(160, 160, 139);
+  color: black;
   padding: 40px 0; /* Double padding */
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 a {
-  color: white; /* Normal state */
+  color: black; /* Normal state */
   text-decoration: none; /* Remove underline */
   font-size: 2rem; /* Double the font size */
 }
@@ -87,19 +87,19 @@ section#about img {
 }
 
 footer {
-  background-color: #000000; /* Black background for footer */
+  background-color: rgb(160, 160, 139); 
   text-align: center;
   padding: 40px 0; /* Double padding */
 }
 
 footer p {
-  color: #ffffff; /* White text */
+  color: black; 
   font-size: 1.75rem; /* Double the font size */
 }
 
 button {
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White text */
+  background-color: beige; 
+  color: black; 
   border: none; /* Remove border */
   padding: 10px 20px;
   font-size: 2rem;
@@ -107,7 +107,7 @@ button {
 }
 
 button:hover {
-  background-color: #333333; /* Slightly darker background on hover */
+  background-color: rgb(160, 160, 139); /* Slightly darker background on hover */
 }
 
 /* Media Query for Mobile Devices */
