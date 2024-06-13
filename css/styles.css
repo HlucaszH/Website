@@ -1,53 +1,49 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  background-color: beige;
   color: black;
   line-height: 1.6;
-  font-size: 2rem; /* Double the base font size */
+  font-size: 2rem;
 }
 
 header {
-  background-color: rgb(160, 160, 139);
+  background-color: rgb(247, 221, 209);
   color: black;
-  padding: 40px 0; /* Double padding */
-}
-
-h1 {
-  align-items: center;
+  padding: 40px 0;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px; /* Double padding */
+  padding: 0 40px;
 }
 
 .nav-links {
   display: flex;
-  gap: 40px; /* Double the space between the links */
+  gap: 40px;
+  list-style: none;
 }
 
 a {
-  color: black; /* Normal state */
-  text-decoration: none; /* Remove underline */
-  font-size: 2rem; /* Double the font size */
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px; /* Double padding */
+  padding: 40px;
 }
 
 .profile {
@@ -56,11 +52,10 @@ main {
 
 .profile-picture {
   border-radius: 50%;
-  width: 300px; /* Double the size */
-  height: 300px; /* Double the size */
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  margin-bottom: 40px; /* Double the margin */
-  margin-top: 40px; /* Double the margin */
+  margin: 40px 0;
 }
 
 .memyself {
@@ -69,51 +64,42 @@ main {
 }
 
 section#about ul {
-  list-style-type: none; /* Remove list item decoration */
+  list-style: none;
   padding: 0;
 }
 
-section#about li {
-  margin-bottom: 20px; /* Add some spacing between list items */
-}
-
+section#about li,
 section#about p {
-  margin-bottom: 20px; /* Add margin-bottom to <p> elements */
-}
-
-section#about img {
-  max-width: 100%;
-  height: auto;
+  margin-bottom: 20px;
 }
 
 footer {
-  background-color: rgb(160, 160, 139); 
+  background-color: rgb(247, 221, 209);
   text-align: center;
-  padding: 40px 0; /* Double padding */
+  padding: 40px 0;
 }
 
 footer p {
-  color: black; 
-  font-size: 1.75rem; /* Double the font size */
+  color: black;
+  font-size: 1.75rem;
 }
 
 button {
-  background-color: beige; 
-  color: black; 
-  border: none; /* Remove border */
+  background-color: white;
+  color: black;
+  border: none;
   padding: 10px 20px;
   font-size: 2rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgb(160, 160, 139); /* Slightly darker background on hover */
+  background-color: rgb(247, 221, 209);
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   body {
-    font-size: 1rem; /* Reduce font size for better readability on mobile */
+    font-size: 1rem;
   }
 
   header {
@@ -121,23 +107,17 @@ button:hover {
   }
 
   nav {
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center text */
+    justify-content: center;
+    text-align: center;
     padding: 0 20px;
   }
 
-  h1 {
-    align-items: center;
-  }
-
   .nav-links {
-    flex-direction: column;
-    gap: 0; /* Remove gap on mobile */
+    gap: 20px;
   }
 
   a {
-    font-size: 1rem; /* Set font size of all links to 1rem */
+    font-size: 1rem;
   }
 
   main {
@@ -147,13 +127,7 @@ button:hover {
   .profile-picture {
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  section#about img {
-    width: 100%; /* Ensure image scales down */
-    height: auto;
+    margin: 20px 0;
   }
 
   footer {
@@ -164,12 +138,8 @@ button:hover {
     font-size: 1rem;
   }
 
-  section#about ul {
-    padding: 0;
-  }
-
   section#about li {
-    font-size: 1rem; /* Set font size to 1rem for mobile */
+    font-size: 1rem;
   }
 
   button {
