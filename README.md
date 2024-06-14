@@ -33,6 +33,6 @@ I plan to continuously update the website with new projects and improvements as 
 
 ## Contact
 
-If you have any questions or would like to collaborate, feel free to reach out to me through the contact form on the website.
+If you have any questions or would like to collaborate, feel free to reach out to me through the contact section on the website.
 
 Thank you for visiting!
