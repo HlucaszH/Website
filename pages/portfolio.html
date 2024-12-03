@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lucas Holeczek</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-l"></i>
+                    <div class="logo-text">Lucas Holeczek</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="portfolio-section">
+                <h2 class="portfolio-title">My projects</h2>
+                <div class="portfolio-items">
+                    <!-- Your project items will go here -->
+                    <div class="portfolio-item">
+                        <img src="assets/images/project1.jpg" alt="Project 2">
+                        <h3>simple-weather-app</h3>
+                        <p>Weather forecast website designed for educational purposes, with the goal of eventually developing it into a full-fledged app. 
+                            This project demonstrates the integration of external APIs to fetch and display weather data.
+                        <br><a href="https://github.com/HlucaszH/simple-weather-app" target="_blank">Github link</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/project2.jpg" alt="Project 2">
+                        <h3>Project Title 2</h3>
+                        <p>Short description of the project goes here. Highlight the key features and technologies used.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/project3.jpg" alt="Project 2">
+                        <h3>Project Title 3</h3>
+                        <p>Short description of the project goes here. Highlight the key features and technologies used.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
