@@ -13,14 +13,6 @@ This website serves as a platform to display my work, including:
 - Project descriptions
 - Contact information
 
-## Features
-
-- Clean and modern design
-- Easy navigation
-- Responsive layout for mobile and desktop viewing
-
-## Purpose
-
 The primary goal of this website is to:
 
 - Present my projects in an organized manner
