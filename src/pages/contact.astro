@@ -1,3 +1,10 @@
+---
+// You can add any frontmatter here if needed
+import Styles from "../assets/style.css";
+import Header from "../components/header.astro";
+import React from "react";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +12,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Lucas Holeczek</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href={Styles}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="hero-header">
         <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-l"></i>
-                    <div class="logo-text">Lucas Holeczek</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="https://dominikstas.github.io/bloguslaw/">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <Header />
             <div class="contact-section">
                 <h2 class="contact-title">Contact Me</h2>
                 <p>If you would like to get in touch, feel free to reach out through the following platforms:</p>
@@ -42,7 +31,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script>
+    <script style="text/javascript">
         var togglebtn = document.querySelector(".togglebtn");
         var nav = document.querySelector(".navlinks");
 

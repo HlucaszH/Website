@@ -1,3 +1,10 @@
+---
+// You can add any frontmatter here if needed
+import Styles from "../assets/style.css";
+import Header from "../components/header.astro";
+import React from "react";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +12,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lucas Holeczek</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href={Styles}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="hero-header">
         <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-l"></i>
-                    <div class="logo-text">Lucas Holeczek</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="https://dominikstas.github.io/bloguslaw/">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <Header />
             <div class="portfolio-section">
                 <h2 class="portfolio-title">My projects</h2>
                 <div class="portfolio-items">
                     <!-- Your project items will go here -->
                     <div class="portfolio-item">
-                        <img src="assets/images/project1.jpg" alt="Project 2">
+                        <!-- <img src="assets/images/project1.jpg" alt="Project 1"> -->
                         <h3>simple-weather-app</h3>
                         <p>Weather forecast website designed for educational purposes, with the goal of eventually developing it into a full-fledged app. 
                             This project demonstrates the integration of external APIs to fetch and display weather data.
                         <br><a href="https://github.com/HlucaszH/simple-weather-app" target="_blank">Github link</a></p>
                     </div>
                     <div class="portfolio-item">
-                        <img src="assets/images/project2.jpg" alt="Project 2">
+                        <!-- <img src="assets/images/project2.jpg" alt="Project 2"> -->
                         <h3>Family-Tree</h3>
                         <p>This project is a simple family tree database application built using Python and SQLite. It allows users to manage individual records and their relationships in a family tree format.
                         <br><a href="https://github.com/HlucaszH/Family-Tree" target="_blank">Github link</a></p>
@@ -53,7 +42,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script>
+    <script style="text/javascript">
         var togglebtn = document.querySelector(".togglebtn");
         var nav = document.querySelector(".navlinks");
 
