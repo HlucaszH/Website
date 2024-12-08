@@ -2,6 +2,7 @@
 // You can add any frontmatter here if needed
 import Styles from "../assets/style.css";
 import Header from "../components/header.astro";
+import Items from "../components/portfolio-items.astro";
 import React from "react";
 ---
 
@@ -21,23 +22,7 @@ import React from "react";
             <Header />
             <div class="portfolio-section">
                 <h2 class="portfolio-title">My projects</h2>
-                <div class="portfolio-items">
-                    <!-- Your project items will go here -->
-                    <div class="portfolio-item">
-                        <!-- <img src="assets/images/project1.jpg" alt="Project 1"> -->
-                        <h3>simple-weather-app</h3>
-                        <p>Weather forecast website designed for educational purposes, with the goal of eventually developing it into a full-fledged app. 
-                            This project demonstrates the integration of external APIs to fetch and display weather data.
-                        <br><a href="https://github.com/HlucaszH/simple-weather-app" target="_blank">Github link</a></p>
-                    </div>
-                    <div class="portfolio-item">
-                        <!-- <img src="assets/images/project2.jpg" alt="Project 2"> -->
-                        <h3>Family-Tree</h3>
-                        <p>This project is a simple family tree database application built using Python and SQLite. It allows users to manage individual records and their relationships in a family tree format.
-                        <br><a href="https://github.com/HlucaszH/Family-Tree" target="_blank">Github link</a></p>
-                        </p>
-                    </div>
-                </div>
+                <Items />
             </div>
         </div>
     </div>
