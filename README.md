@@ -1,38 +1,48 @@
-# Personal Portfolio Website
+# Astro Starter Kit: Basics
 
-## Introduction
+```sh
+npm create astro@latest -- --template basics
+```
 
-Hello! My name is Łukasz.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-Welcome to my personal portfolio website, where I showcase all my projects and achievements.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Overview
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-This website serves as a platform to display my work, including:
+## 🚀 Project Structure
 
-- Project descriptions
-- Contact information
+Inside of your Astro project, you'll see the following folders and files:
 
-## Features
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-- Clean and modern design
-- Easy navigation
-- Responsive layout for mobile and desktop viewing
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## Purpose
+## 🧞 Commands
 
-The primary goal of this website is to:
+All commands are run from the root of the project, from a terminal:
 
-- Present my projects in an organized manner
-- Highlight my skills and expertise
-- Provide a way for potential collaborators and employers to reach out to me
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Future Enhancements
+## 👀 Want to learn more?
 
-I plan to continuously update the website with new projects and improvements as I progress in my career.
-
-## Contact
-
-If you have any questions or would like to collaborate, feel free to reach out to me through the contact section on the website.
-
-Thank you for visiting!
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

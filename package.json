@@ -1,0 +1,19 @@
+{
+  "name": "c-users-q-vsc-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.0.8",
+    "react": "^19.0.0",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.1"
+  }
+}

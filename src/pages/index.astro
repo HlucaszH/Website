@@ -1,0 +1,56 @@
+---
+// You can add any frontmatter here if needed
+import Styles from "../assets/style.css";
+import Header from "../components/header.astro";
+import { Image } from 'astro:assets';
+import MyImage from "../assets/images/main.jpg";
+import React from "react";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łukasz Holeczek</title>
+	<link rel="stylesheet" href={Styles}>
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+			<Header />
+            <div class="container">
+                <div class="hero-pic">
+					<Image src={MyImage} alt="Profile Picture" />
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Web Developer</span></h5>
+                    <h1>Łukasz Holeczek</h1>
+                    <p>I am a student at the Silesian University of Technology majoring in Informatics and Embedded Systems.
+						I have always been interested in technology and the universe scince the day I first picked up a sci-fi book.
+						In my spare time I often read books like my life depends on it.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="/contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.github.com/HlucaszH" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/łukasz-holeczek-9a11b8305" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+	<script src="../components/script-typing.js"></script>
+</body>
+</html>

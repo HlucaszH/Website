@@ -1,0 +1,40 @@
+---
+// You can add any frontmatter here if needed
+import Styles from "../assets/style.css";
+import Header from "../components/header.astro";
+import Items from "../components/portfolio-items.astro";
+import React from "react";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lucas Holeczek</title>
+    <link rel="stylesheet" href={Styles}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <Header />
+            <div class="portfolio-section">
+                <h2 class="portfolio-title">My projects</h2>
+                <Items />
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script style="text/javascript">
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
